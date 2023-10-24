@@ -1,8 +1,12 @@
 .recipes {
-  padding: 50px;
+  padding: 0 50px;
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     gap: 30px;
   }
+}
+
+input {
+  margin: 40px 0;
 }
