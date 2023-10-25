@@ -4,7 +4,7 @@ import Recipes from "../components/Recipes";
 const Home = () => {
   return (
     <div>
-      <h1>Recipes of the world</h1>
+      <h1>Traditional recipes</h1>
       <Recipes />
     </div>
   );

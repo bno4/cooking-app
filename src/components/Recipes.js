@@ -31,7 +31,7 @@ const Recipes = () => {
         {data === null ? (
           <h3>Oups ! No results...</h3>
         ) : (
-          data.map((meal) => {
+          data.slice(0, 24).map((meal) => {
             return <Card key={meal.idMeal} meal={meal} />;
           })
         )}

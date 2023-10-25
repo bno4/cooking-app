@@ -9,9 +9,10 @@
   transition: 200ms ease-in-out;
   &:hover {
     transform: scale(1.02);
+    box-shadow: 2px 2px 2px 1px #00000045;
   }
   h3 {
-    color: #222;
+    color: salmon;
     margin: 20px 0;
   }
   img {
