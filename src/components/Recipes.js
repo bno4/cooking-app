@@ -14,19 +14,29 @@ const Recipes = () => {
 
   return (
     <div className="recipes">
-      <form action="">
+      <form
+        action=""
+        onSubmit={(e) => {
+          e.preventDefault();
+        }}
+      >
         <input
           type="text"
           placeholder="ex:Beef"
-          onChange={(e) => setFilter(e.target.value.toLowerCase())}
+          onChange={(e) => setFilter(e.target.value)}
         />
       </form>
+
       <ul>
-        {data
-          .filter((meal) => meal.strMeal.toLowerCase().includes(filter))
-          .map((meal) => (
-            <Card key={meal.idMeal} meal={meal} />
-          ))}
+        {data === null ? (
+          <h3>Oups ! No results...</h3>
+        ) : (
+          data.map((meal) => {
+            return <Card key={meal.idMeal} meal={meal} />;
+          })
+        )}
+
+        {/* ou {data && data.map((meal- =>...)} */}
       </ul>
     </div>
   );
