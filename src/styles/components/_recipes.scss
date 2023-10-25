@@ -1,5 +1,8 @@
 .recipes {
   padding: 0 50px;
+  margin: 0 auto;
+  max-width: 1400px;
+
   ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
